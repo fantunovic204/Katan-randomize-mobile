@@ -1,0 +1,177 @@
+.wholeDiv {
+transform: scale(0.35);
+margin:-250px;
+    /* Just for visualization */
+  }
+
+
+  .titleBox {
+    padding: 1px;
+    margin: 1px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'YourFontName';
+    color: #e8d617;
+    font-size: 90px;
+    /* Adding a black border around the text */
+    text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
+  }
+
+  @font-face {
+    font-family: 'YourFontName';
+    src: url('./fonts/Garamond-MT-Bold.otf') format('opentype');
+    font-weight: bold;
+    font-style: normal;
+  }
+
+  .buttonsBox {
+    padding: 10px;
+    padding-bottom: 20px;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .togglesBox {
+    padding: 10px;
+    padding-bottom: 20px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: left;
+  }
+
+  .generateButton {
+    color: #ffffff;
+    background-color: #6bc82d;
+    font-size: 60px;
+    margin: 10px;
+    border: 1px solid #6bc82d;
+    padding: 15px 50px;
+    border-radius: 28px;
+    cursor: pointer;
+    z-index: 1;
+  }
+  .generateButton:active {
+    color: #6bc82d;
+    background-color: #ffffff;
+  }
+
+  h1 {
+    margin: 3px;
+    padding: 3px;
+  }
+
+  h2 {
+    margin: 3px;
+    padding: 3px;
+  }
+
+  *,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, ".SFNSText-Regular", "Helvetica Neue", "Roboto", "Segoe UI", sans-serif;
+}
+
+.toggle {
+  cursor: pointer;
+  padding: 25px;
+  display: inline-block;
+  z-index: 1;
+}
+
+.toggle-switch {
+  display: inline-block;
+  background: #ccc;
+  border-radius: 36px;
+  margin-right: 10px;
+  width: 130px;
+  height: 68px;
+  position: relative;
+  vertical-align: middle;
+  transition: background 0.25s;
+}
+.toggle-switch:before, .toggle-switch:after {
+  content: "";
+}
+.toggle-switch:before {
+  display: block;
+  background: linear-gradient(to bottom, #fff 0%, #eee 100%);
+  border-radius: 50%;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.25);
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  transition: left 0.25s;
+}
+.toggle:hover .toggle-switch:before {
+  background: linear-gradient(to bottom, #fff 0%, #fff 100%);
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.5);
+}
+.toggle-checkbox:checked + .toggle-switch {
+  background: #56c080;
+}
+.toggle-checkbox:checked + .toggle-switch:before {
+  left: 65px;
+}
+
+.toggle-checkbox {
+  position: absolute;
+  visibility: hidden;
+}
+
+.toggle-label {
+  margin-left: 5px;
+  position: relative;
+  font-size: 50px;
+  top: 12px;
+
+}
+    /* MODAL*/
+   .overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+  }
+
+  .modal {
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: flex-start;
+    align-content: flex-end;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+  .close-btn {
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 18px;
+  }
+
+  .modalTitle {
+    font-size: 55px;
+  }
