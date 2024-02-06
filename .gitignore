@@ -13,4 +13,4 @@
 .externalNativeBuild
 .cxx
 local.properties
-!/build/outputs/apk/debug/catan-randomizer.apk
+!app/build/outputs/apk/debug/catan-randomizer.apk
