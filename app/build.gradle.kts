@@ -3,11 +3,11 @@ plugins {
 }
 
 android {
-    namespace = "com.example.katanrandomize"
+    namespace = "com.example.catanrandomize"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.example.katanrandomize"
+        applicationId = "com.example.catanrandomize"
         minSdk = 25
         targetSdk = 34
         versionCode = 1

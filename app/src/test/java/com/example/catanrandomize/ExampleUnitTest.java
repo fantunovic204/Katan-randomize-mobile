@@ -1,4 +1,4 @@
-package com.example.katanrandomize;
+package com.example.catanrandomize;
 
 import org.junit.Test;
 

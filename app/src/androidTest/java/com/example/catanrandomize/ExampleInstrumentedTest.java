@@ -1,4 +1,4 @@
-package com.example.katanrandomize;
+package com.example.catanrandomize;
 
 import android.content.Context;
 

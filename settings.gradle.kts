@@ -13,6 +13,6 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "Katan Randomize"
+rootProject.name = "Catan Randomize"
 include(":app")
  
