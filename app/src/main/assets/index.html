@@ -33,7 +33,7 @@
 
   <div class="wholeDiv" id="wholeDiv">
     <div class="titleBox" id="titleBox">
-      <h1>KATAN</h1>
+      <h1>CATAN</h1>
       <h2>RANDOMIZER</h2>
     </div>
         <!-- Buttons -->
@@ -46,7 +46,6 @@
     <!-- Options Modal -->
     <div id="optionsModal" class="overlay">
       <div class="modal">
-        <span class="close-btn" onclick="closeModal()">&times;</span>
         <h2 class="modalTitle">Generating board options</h2>
 
         <label class="toggle">
@@ -152,16 +151,19 @@
     let expansionGenerateButton = document.querySelector('#generateExpansionButton');
     let standardBoard = document.querySelector('#wholeStandardBoard');
     let expansionBoard = document.querySelector('#wholeExpansionBoard');
+      let optionsModal = document.querySelector('#optionsModal');
     //expansion is turned on
     if (checkbox.checked) {
       expansionBoard.style.display = 'block';
+      optionsModal.style.height = '83%';
       standardBoard.style.display = 'none';
       expansionGenerateButton.style.display = 'block';
       standardGenerateButton.style.display = 'none';
       document.getElementById("expansionCheckbox").addEventListener("change", setExpansionBoard(expansionBoardOptions));
-      //espansion is turned off
+      //expansion is turned off
     } else {
       expansionBoard.style.display = 'none';
+      optionsModal.style.height = '100%';
       standardBoard.style.display = 'block';
       expansionGenerateButton.style.display = 'none';
       standardGenerateButton.style.display = 'block';

@@ -4,7 +4,6 @@ margin:-250px;
     /* Just for visualization */
   }
 
-
   .titleBox {
     padding: 1px;
     margin: 1px;
@@ -55,10 +54,12 @@ margin:-250px;
     border-radius: 28px;
     cursor: pointer;
     z-index: 1;
+    -webkit-tap-highlight-color: transparent;
   }
   .generateButton:active {
     color: #6bc82d;
     background-color: #ffffff;
+    -webkit-tap-highlight-color: transparent;
   }
 
   h1 {
@@ -86,6 +87,7 @@ body {
   padding: 25px;
   display: inline-block;
   z-index: 1;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .toggle-switch {
@@ -98,6 +100,7 @@ body {
   position: relative;
   vertical-align: middle;
   transition: background 0.25s;
+  -webkit-tap-highlight-color: transparent;
 }
 .toggle-switch:before, .toggle-switch:after {
   content: "";
@@ -158,7 +161,7 @@ body {
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     display: flex;
-    align-items: flex-start;
+    /*align-items: flex-start;*/
     align-content: flex-end;
     flex-wrap: wrap;
     flex-direction: column;
